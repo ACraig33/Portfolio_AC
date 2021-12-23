@@ -1,0 +1,359 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap');
+
+body{
+	background: -webkit-gradient(linear, left top, left bottom, from(#6a96d8), to(#4f478e)) fixed;
+	margin: 0px 0px 0px 0px; 
+	padding: 0px;
+	width:auto;
+	height:auto;
+	font-family: 'Merriweather', serif;
+	font-color:navy;
+}
+/*loader */
+.loader {
+  border: 16px solid #f3f3f3; /* Light grey */
+  border-top: 16px solid #3498db; /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+header img.logo{
+	width:75px;
+}
+header{
+	z-index:999; 
+	position:absolute;
+    display:flex;
+	justify-content: space-between;
+	align-items:center;
+	transition:0.3s ease;
+	width: 95%;
+	padding: 10px 0px;
+	margin-top:15px;
+	margin-left:20px;
+
+}
+header.navigation{
+	position: relative;
+
+
+}
+header .navigation .navigation-items a{
+	position: relative;
+	color:#00264D;
+	font-size:16px;;
+	font-weight:500;
+	text-decoration:none;
+	margin-left:30px;
+	transition: 0.2s ease;
+	display:inline-block;	
+}
+header .navigation .navigation-items a:hover{
+	color:#ffffff;
+}
+
+header .navigation .navigation-items a:before{
+	content:'';
+	position: absolute;
+	background:#fff;
+	width: 0;
+	height:3px;
+	bottom:0;
+	left:0; 
+	
+	
+}
+header .navigation .navigation-items a:hover:before{
+	width:100%;
+
+}
+a{
+	color:black;
+}
+/* add an alert to a*/
+a:hover{
+	color:white;
+	transform: .2s ease-in;
+}
+section.home{
+	position:absolute;
+	padding:100px 50px;
+	margin-top:80px;
+}
+
+/* about me section */
+div.about_me{
+	width:500px;
+	height:auto;
+	border-radius: 65px 0px 65px 0px;
+	margin-top:80px;
+	margin-left:645px;
+	padding:20px;
+	box-shadow:4px 8px 15px 0px;
+	/* find a good accent color for the box and the box shadow + make everything white*/
+}
+p{
+	color:black;
+}
+
+h2.skills{
+	margin-left:125px;
+	color:black;
+}
+img.skills{
+	width:35px;
+	height:auto;
+	margin-left:20px;
+	
+}
+div.about_me ul{
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 0.5s linear;
+}
+div.about_me:hover ul{
+	visibility:visible;
+	opacity: 1;
+	transition: 0.3s ease-in;
+	
+}
+div.about{
+	width: 375px;
+	margin-top:-350px;
+	margin-left:40px;
+}
+h3.about{
+	margin-left:10px;
+}
+.about p{
+	color:bLack;
+}
+
+
+/*My work section */
+div.my_workContainer{
+	width:auto;
+	height:auto;
+	margin-top:140px;
+	margin-left:60px;
+	position:relative;
+		
+}
+.my_workContainer h4{
+	font-size:25px;
+	margin-left:-20px;
+	margin-top:-20px;
+
+}
+
+h5 a{
+	color:black;
+	font-size:15px;
+	text-decoration:underline;
+	position:absolute;
+	margin-top:-33px;
+	
+	
+}
+img.flight{
+	width:100px;
+	height:auto;
+	margin-top:20px;
+}
+div.card1{
+	perspective:900px;
+	background-color:transparent;
+	margin-left:-10px;
+	margin-top: 50px;
+	width:150px;
+}
+.card-inner{
+	position:relative;
+	width:100%;
+	height:100%;
+	text-align:center;
+	transition:transform 0.8s;
+	transform-style:preserve-3d;
+}
+.card1:hover .card-inner{
+	transform:rotateY(360deg);
+	
+}
+.card-front .card-back{
+	position:absolute;
+	width:100%;
+	height:100%;
+	 -webkit-backface-visibility:hidden;
+	backface-visibility: hidden;
+}
+.card-front{
+	
+}
+
+h5.c1{
+	
+	top:-10px;
+	margin-left:20px;
+}
+
+.certification_container{
+	margin-top:140px;
+}
+h6{
+	margin-left:40px;
+	font-size:25px;
+}
+
+
+
+.carousel-item img{
+	max-width:850px;
+	height:auto;
+}
+.carousel-item img#js{
+	max-width:850px;
+}
+
+div.contact_container{
+	margin-top:120px;
+	position: relative;
+	
+}
+h7{
+	font-size:25px;
+	margin-left:20px;
+}
+div.phone_container{
+	margin-top:80px;
+    border: 2px solid rgba(236,231,231,0.72);
+	height:auto;
+	width:200px;
+	position:relative;
+}
+img.phone{
+	width:70px;
+	margin-left:60px;
+}
+.word_block{
+	margin-top:40px;
+	margin-left:10px;
+}
+.word_block h8{
+	margin-left:14px;
+}
+.word_block p{
+	margin-left:30px;
+}
+.email_container{
+	margin-left:350px;
+	border: 2px solid rgba(236,231,231,0.72);
+	height:171px;;
+	width:200px;
+	position:relative;
+	margin-top:-170px;
+	
+}
+.email_container img{
+	width:125px;
+	margin-left:40px;
+	margin-top:-20px;
+}
+.email{
+	margin-top:20px;
+}
+.email h9{
+	margin-left:60px;
+}
+@media (max-width:1040px){
+	
+	
+	header{
+		padding:100px 20px;
+		
+	}
+		
+	header .navigation{
+	  display:none;
+	}
+	header .navigation.active{
+		position: absolute;
+		z-index: 888;
+		width: 100%;
+		height:100vh;
+		top:0;
+		left:0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		
+		
+		
+	}
+	header .navigation .navigation-items a{
+		color:black;
+		font-size:1.2em;
+		margin:20px;
+		font-weight: 500;
+		margin-left:30px;
+	}
+
+	header .navigation .navigation-items a:before{
+		background:#fff;
+		height:5px;
+	}
+	
+	header .navigation.active .navigation-items{
+		background:rgba(248,248,248,0.75);
+		width:600px;
+		max-width: 600px;
+		margin:20px;
+		padding:40px;
+		position:absolute;
+		display:flex;
+		flex-direction: column;
+		align-items:center;
+		border-radius:5px;
+		box-shadow: 0 5px 25px rgb(1,1,1);
+	
+		
+		
+	}
+	
+	.menu-btn{
+		background: url("Travel website/menu_icon copy.png")no-repeat;
+		background-size:30px;
+		background-position: center;
+		width:40px;
+		height:40px;
+		cursor:pointer;
+		transition:0.3s ease;
+		
+	}
+	.menu-btn.active{
+		z-index:999;
+		background:url("Travel website/close_menu copy1.png")no-repeat;
+		background-size: 25px;
+		background-position: center;
+		transition:0.3s ease;
+	}
+	section.home{
+		margin-top:500px;
+	}
+	
+	div.about_me{
+		display:none;
+	}
+	div.certification_container img {
+		max-width:500px;
+	}
+	div.certification_container img#js{
+		max-width:500px;
+	}
